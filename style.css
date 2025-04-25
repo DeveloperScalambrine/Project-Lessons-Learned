@@ -11,3 +11,66 @@ body {
     width: 300px;
     height: 200px;
 }
+
+#licoes_aprendidas {
+    border: 2px solid green;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #f0fff0;
+    list-style: none; 
+    margin: 15px 0 0 10px;
+}
+
+#licoes_a_aprender {
+    border: 2px dashed orange;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fffaf0;
+    list-style: none;
+    margin: 15px 0 0 10px;
+}
+
+article {
+    font-size: 18px;             
+    color: #2a3d8f;        
+    line-height: 1.8;            
+    font-family: 'Georgia', serif; 
+}
+  
+aside {
+   font-size: 16px;
+   color: #d17c18;
+   line-height: 1.6;
+   font-family: 'Arial', sans-serif;
+}
+
+.conteiner-lado-a-lado {
+    display: flex;
+    justify-content: center;   /* center content if container is wider than content */
+    align-items: flex-start;   /* align at the top */
+    gap: 24px;                 /* space between columns */
+    margin: 20px auto;
+  }
+  
+  /* Give both columns the same width */
+  .lado-esquerdo, .lado-direito {
+    width: 380px;              /* fixed or max-width for balance */
+    min-height: 200px;         /* just for visual balance, optional */
+    box-sizing: border-box;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    word-break: break-word;    /* ensures text wraps */
+  }
+  
+  @media (max-width: 900px) {
+    .conteiner-lado-a-lado {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .lado-esquerdo, .lado-direito {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
