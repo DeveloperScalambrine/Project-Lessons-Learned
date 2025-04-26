@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Lessons Learned</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <nav id="main">
-    <header>
-      <div id="cabecalho">
-        <h1 id="titulo">Welcome The Lessons Learned</h1>
-      </div>
-    </header>
-      <img id="minha_foto" src="photos/mine.jpg" alt="My photo">
+  <header>
+    <div id="cabecalho">
+      <h1 id="titulo">Welcome The Lessons Learned</h1>
+    </div>
+  </header>
+  <main>
+    <img id="minha_foto" src="photos/mine.jpg" alt="My photo">
+    <section class="list-section">
+      <h2 class="list-title">Lessons Learned</h2>
       <ol id="licoes_aprendidas">
         <li>SELECTOR CLASS OR ID</li>
         <li>BOX MODEL</li>
@@ -26,6 +29,10 @@
         <li>POSITIONING OF ELEMENTS</li>
         <li>COMBINATIONS AND DESCENDING CLASS</li>
       </ol>
+    </section>
+      
+    <section class="list-section">
+      <h2 class="list-title">Lessons To Learn</h2>
       <ul id="licoes_a_aprender">
         <li>JAVASCRIPT</li>
         <li>FRONT-END</li>
@@ -38,48 +45,54 @@
         <li>MANIPULATION OF DATA</li>
         <li>DATA STORAGE</li>
       </ul>
-      <a href="https://developerscalambrine.github.io/" target="_blank"  rel="noopener noreferrer">My Portfolio</a>
-      <div class="conteiner-lado-a-lado">
-        <article class="lado-esquerdo">
-          While working on this project, I learned how to use class and ID selectors to style elements, and how the box model affects layout and spacing. I discovered the importance of semantic HTML for better accessibility. I practiced using pseudo-classes and dynamic CSS to create interactive designs. I also learned the basics of Git and GitHub for version control, how to properly structure a web page, position elements effectively, and use selector combinations and descendant selectors for complex layouts.
-        </article>
-        <aside class="lado-direito">
-          At first, I found web development intimidating. As I explored HTML, CSS, and Git, each step built my confidence. Now, coding feels less mysterious, and I’m excited to keep learning and applying new skills on real projects.
-        </aside>
+    </section>
+    <a id="my-link" href="https://developerscalambrine.github.io/" target="_blank"  rel="noopener noreferrer">My Portfolio</a>
+    <div class="conteiner-lado-a-lado">
+      <article class="lado-esquerdo">
+        While working on this project, I learned how to use class and ID selectors to style elements, and how the box model affects layout and spacing. I discovered the importance of semantic HTML for better accessibility. I practiced using pseudo-classes and dynamic CSS to create interactive designs. I also learned the basics of Git and GitHub for version control, how to properly structure a web page, position elements effectively, and use selector combinations and descendant selectors for complex layouts.
+      </article>
+      <aside class="lado-direito">
+        At first, I found web development intimidating. As I explored
+        <span class="lang-icon html"><i class="fab fa-html5"></i> HTML</span>,
+        <span class="lang-icon css"><i class="fab fa-css3-alt"></i> CSS</span> and
+        <span class="lang-icon git"><i class="fab fa-git-alt"></i> Git</span>,
+        each step built my confidence. Now, coding feels less mysterious,
+        and I’m excited to keep learning and applying new skills on real projects.
+      </aside>
     </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Programming Language</th>
-            <th>User Percentage (%)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>JavaScript</td>
-            <td>65</td>
-          </tr>
-          <tr>
-            <td>Python</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Java</td>
-            <td>30</td>
-          </tr>
-          <tr>
-            <td>C#</td>
-            <td>20</td>
-          </tr>
-          <tr>
-            <td>HTML/CSS</td>
-            <td>80</td>
-          </tr>
-        </tbody>
-      </table>
-      <footer id="rodape">
-        <P>made by Carlos Henrique</P>
-      </footer>
-  </nav>
+    <table class="nice-table">
+      <thead>
+        <tr>
+          <th>Programming Language</th>
+          <th>User Percentage (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>JavaScript</td>
+          <td data-bar="65">65</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td data-bar="50">50</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td data-bar="30">30</td>
+        </tr>
+        <tr>
+          <td>C#</td>
+          <td data-bar="20">20</td>
+        </tr>
+        <tr>
+          <td>HTML/CSS</td>
+          <td data-bar="80">80</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <footer id="rodape">
+    Made with <span class="footer-heart">❤</span> by Carlos Henrique
+  </footer>
 </body>
 </html>
